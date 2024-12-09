@@ -42,13 +42,12 @@ Finally, we define a logistic growth function using the estimated parameters for
 EXPLORATORY PLOT 1 - The first plot exhibits a sigmoidal curve under what appears to be logistic growth. It starts at a low population size and begins to rapidly accelerate at around 1500 minutes. It then plateaus off at 2000 minutes with a population size of around 60,000,000,000 (60 billion)
 EXPLORATORY PLOT 2 - The Second plot exhibits a linear portion (on the log base 10 transformed y axis) with a plateau below 1x10^11
 
-MODEL 1 - The first model summary suggests that N0 is exp^ 6.8941709 so :
-N0 is therefore 987  (to the nearest whole colony.)
-The first model summary suggests 
-r = 0.01 (to two d.p)
-
-MODEL 2 - 
-Estimates our mean value of K, our carrying capacity,  from the summary output to be : 6x10^10
+The first model summary suggests that N0 is exp^6.8941709 so,
+**N0 = 987** (to the nearest whole colony.)
+The first model summary suggests, 
+**r = 0.01** (to two d.p)
+The second model summary suggests that, 
+**K is 6x10^10**
 
 MODEL PLOT – finally our model plots, that used a function built from our data set models, closely followed our data when plotted over it, suggesting the model is robust.
 
