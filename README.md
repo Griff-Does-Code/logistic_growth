@@ -3,7 +3,7 @@
 # Question 1 : Detailed information on the analysis.
 The purpose of this analysis was to model the growth of E.coli suspended in media, in a reproducible way. 
 
-# Summary:
+## Summary:
 The following data analysis examines a logistic growth pattern in the growth of Escherichia coli under controlled conditions. The premise is that, when suspended in growth media with a fixed resource supply, the bacterial population will initially experience exponential growth, but eventually plateau as resource limitations set in, reaching a maximum carrying capacity.
 
 At the outset, when the bacterial population is small, growth occurs at a steady rate. As the population increases, it enters an exponential growth phase where the rate of growth accelerates. However, as resources become scarce, the growth rate slows and eventually stabilizes, resulting in a plateau once the population reaches its carrying capacity. This pattern of growth creates a sigmoidal growth curve.
@@ -16,7 +16,7 @@ The CSV of the raw data  is also linked to this git hub repository.
 The data from the csv file consists of two columns with headings 't' and 'N'. 
 't' is the time passed since the culture was mixed (in minutes) and 'N' and the population size of the bacteria (Escherichia coli) at that time point.
 
-# Exploratory plots of raw data in plot_data.R script
+## Exploratory plots of raw data in plot_data.R script
 
 This initial R script (plot_data.R) visualizes the raw data using the ggplot2 package, generating two scatter plots to help identify general trends in the population growth of Escherichia coli.
 
