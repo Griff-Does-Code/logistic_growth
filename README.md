@@ -92,6 +92,10 @@ N = 987 x (0.01 +1)^(4980) =  **3.271587877x10^24**
 Under logistic growth the model (logistic_fun(4980)) estimates **6x10^10** (the figure for carrying capacity) which is a much smaller population than that predicted by exponential functions, by 14 orders of magnitude. 
 So exponential model output is a much larger population size than logistic growth does, which makes sense since exponentials grow very quickly and aren’t limited, whereas logistic growth curves are limited at the carrying capacity.
 
+# Question 3 : A graph comparing the two models 
+
+<img width="938" alt="Screenshot 2024-12-09 at 16 55 09" src="https://github.com/user-attachments/assets/4ddbaf3c-3e45-4134-920b-f73e4122716d">
+
 
 
  
