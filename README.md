@@ -59,20 +59,33 @@ Td = ln(2) / r
  ≈69.23 minutes (when r = 0.0100086)
 
 
- # Question 2 : calculate the population size at t = 4980 min, assuming that the population grows exponentially.
-The code for this question can be found in the comparing_graphs.r script of this repository.
+ # Question 2 : calculate the population size at t = 4980 min, assuming that the population grows exponentially. How does it compare to population size under logicstic growth?
 
-Parameters:
+The code for this question can be found in the comparing_graphs.r script of this repository.
+Exponential growth compounds over time. Meaning that at each successive time point the population will get larger and larger at accelerating jumps.  There are also no limiting factors under exponential growth meaning the growth continues indefinitely.
+
+
+Our derived parameters:
 **No  -> 987**
 
 **r ->  0.01**
 
 **t = 4980**
 
-exponential growth curve - >
-N = N0 x e^(rt)
+The exponential growth equation :
+Nt = N0(1+r)^(t) 
 
-N = 987 x e^(0.01 x 4980) =  **4.370846e+24**
+Where:
+
+N0 = starting population size of the culture
+
+K = carrying capacity
+
+r = growth rate
+
+
+So,population size when time is 4980 is : 
+N = 987 x (0.01 +1)^(4980) =  **3.271587877x10^24**
 (also performed in r, see comparing_graphs.r)
 
 Under logistic growth the model estimates (logistic_fun(4980)) = No  -> 987
