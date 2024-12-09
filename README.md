@@ -87,20 +87,10 @@ r = growth rate
 
 So,population size when time is 4980 is : 
 N = 987 x (0.01 +1)^(4980) =  **3.271587877x10^24**
-(also performed in r, see comparing_graphs.r)
-
-Under logistic growth the model estimates (logistic_fun(4980)) = No  -> 987
-r ->  0.01
-t=4980
-
-exponential growth curve - >
-
-N = N0 x ert
-
-N = 987 x e0.01 x 4980 =  4.370846e+24
 (also performed in r, which pulls a more acccurate answer, of the same order of magnitude, see comparing_graphs)
 
-Under logistic growth the model estimates (logistic_fun(4980)) **5.979x10^10**, a much smaller population than that predicted by exponential functions, by 14 orders of magnitude. 
+Under logistic growth the model estimates (logistic_fun(4980)) = 
+Under logistic growth the model estimates (logistic_fun(4980)) **60x10^10**, a much smaller population than that predicted by exponential functions, by 14 orders of magnitude. 
 So exponential model output is a much larger population size than logistic growth does, which makes sense since exponentials grow very quickly and aren’t limited.
 
 
