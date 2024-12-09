@@ -1,16 +1,21 @@
-#logistic growth reproducibility code
-
-
 
 
 # Question 1 : Detailed information on the analysis.
+The purpose of this analysis was to model the growth of E.coli suspended in media, in a reproducible way. 
 
-## DATA : 
-The data used for this analysis comes from the experiment.csv file, which can be found at (https://osf.io) by typing in experiment.csv and selecting the file authored by Jose Gabriel Nino Barreat. The CSV is also linked to this git hub repository. The data from the csv file consists of two coloumns with headings 't' and 'N'. 't' is the time passed  measured in minutes and 'N' is the population size of the bacteria (_Escherichia coli_) that we are studying.
+#Summary:
+The following data analysis examines a logistic growth pattern in the growth of Escherichia coli under controlled conditions. The premise is that, when suspended in growth media with a fixed resource supply, the bacterial population will initially experience exponential growth, but eventually plateau as resource limitations set in, reaching a maximum carrying capacity.
 
+At the outset, when the bacterial population is small, growth occurs at a steady rate. As the population increases, it enters an exponential growth phase where the rate of growth accelerates. However, as resources become scarce, the growth rate slows and eventually stabilizes, resulting in a plateau once the population reaches its carrying capacity. This pattern of growth creates a sigmoidal growth curve.
 
-## Plotting the data
-The analysis began with a plotting of the data to observe the general trends. To do this we read in our data and we first plot a graph with a continuous x and y axis. The time is plotted on the x axis and the population sixe is plotted on the y axis. We then plotted a second graph, this time with a log base 10 transformation was applied to our y variable , the population size. 
+This analysis aims to evaluate the logistic growth model by fitting it to the data, with parameters estimated through linear modelling techniques. The final step of the analysis assesses how well the logistic growth model aligns with the observed data, providing insights into the population dynamics of E. coli in this experimental setting.
+
+## Data: 
+The data used for this analysis comes from the experiment.csv file, which can be found at (https://osf.io) by typing in experiment.csv and selecting the file authored by Jose Gabriel Nino Barreat. 
+The CSV of the raw data  is also linked to this git hub repository.
+The data from the csv file consists of two columns with headings 't' and 'N'. 
+'t' is the time passed since the culture was mixed (in minutes) and 'N' and the population size of the bacteria (Escherichia coli) at that time point.
+
 
 ## Modelling
 
