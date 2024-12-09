@@ -39,17 +39,20 @@ The second linear model focuses on the plateau phase of the growth curve to esti
 Finally, we define a logistic growth function using the estimated parameters for N₀, r, and K, which were obtained from the linear model outputs. This function is then plotted over the raw data to visualize the fit of the logistic growth model. These parameter estimates, derived from analyzing the entire dataset, offer the most accurate values, as they reduce potential error. For example, it is more reliable to use the model-estimated N₀ than to rely on the first data point in the dataset, as the model incorporates information from across the entire dataset, thereby reducing the error that might arise from using a single observation. We then overlay the logistic growth curve on both the transformed and untransformed versions of the data to assess the model's fit visually. The logistic growth curve is based on the theoretical framework outlined in the README.md file of this repository: https://github.com/josegabrielnb/reproducible_research. 
 
 ## Results
-EXPLORATORY PLOT 1 - The first plot exhibits a sigmoidal curve under what appears to be logistic growth. It starts at a low population size and begins to rapidly accelerate at around 1500 minutes. It then plateaus off at 2000 minutes with a population size of around 60,000,000,000 (60 billion)
-EXPLORATORY PLOT 2 - The Second plot exhibits a linear portion (on the log base 10 transformed y axis) with a plateau below 1x10^11
 
 The first model summary suggests that N0 is exp^6.8941709 so,
+
 **N0 = 987** (to the nearest whole colony.)
+
 The first model summary suggests, 
+
 **r = 0.01** (to two d.p)
+
 The second model summary suggests that, 
+
 **K is 6x10^10**
 
-MODEL PLOT – finally our model plots, that used a function built from our data set models, closely followed our data when plotted over it, suggesting the model is robust.
+MODEL PLOT FIT – finally our model plots, that used a function built from our data set models, closely followed our data when plotted over it, suggesting the model is robust.
 
 Lastly, an addition to the analysis would be to express the doubling time (Td) if interested, we can perform :
 Td = ln(2) / r
