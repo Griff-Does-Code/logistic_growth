@@ -58,3 +58,36 @@ Lastly, an addition to the analysis would be to express the doubling time (Td) i
 Td = ln(2) / r
  ≈69.23 minutes (when r = 0.0100086)
 
+
+ # Question 2 : calculate the population size at t = 4980 min, assuming that the population grows exponentially.
+The code for this question can be found in the comparing_graphs.r script of this repository.
+
+Parameters:
+**No  -> 987
+r ->  0.01
+t = 4980**
+
+exponential growth curve - >
+N = N0 x e^(rt)
+
+N = 987 x e^(0.01 x 4980) =  **4.370846e+24**
+(also performed in r, see comparing_graphs.r)
+
+Under logistic growth the model estimates (logistic_fun(4980)) = No  -> 987
+r ->  0.01
+t=4980
+
+exponential growth curve - >
+
+N = N0 x ert
+
+N = 987 x e0.01 x 4980 =  4.370846e+24
+(also performed in r, see comparing_graphs)
+
+Under logistic growth the model estimates (logistic_fun(4980)) **5.979x10^10**, a much smaller population than that predicted by exponential functions, by 14 orders of magnitude. 
+So exponential model output is a much larger population size than logistic growth does, which makes sense since exponentials grow very quickly and aren’t limited.
+
+
+
+ 
+
