@@ -63,9 +63,11 @@ Td = ln(2) / r
 The code for this question can be found in the comparing_graphs.r script of this repository.
 
 Parameters:
-**No  -> 987
-r ->  0.01
-t = 4980**
+**No  -> 987**
+
+**r ->  0.01**
+
+**t = 4980**
 
 exponential growth curve - >
 N = N0 x e^(rt)
