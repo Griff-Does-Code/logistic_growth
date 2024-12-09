@@ -24,7 +24,14 @@ First, the raw data is imported and plotted on a graph with continuous x- and y-
 
 Next, a second plot is created with a log base 10 transformation applied to the population size (the y-variable). This transformation compresses the y-axis, so that the exponential growth phase becomes a straight line. On a semi-logarithmic plot, this linear relationship is a characteristic indicator of logistic growth. As with the first plot, the population size eventually levels off, reaching a plateau that corresponds to the carrying capacity.
 
-## Modelling
+## Modelling linearized data in fit_linear_model.R
+
+This script calculates the key parameters of the logistic growth model for Escherichia coli: initial population size (N₀), exponential growth rate (r), and carrying capacity (K), using two separate linear models applied to the raw data.
+
+The first linear model estimates the initial population size (N₀) and the exponential growth rate (r) by focusing on the early stages of growth, specifically the initial and exponential phases when the population size is much smaller than the carrying capacity (K >> N₀) and time is relatively short. This corresponds to the linear portion of the second plot in the plot_data.R file. To isolate this phase, the data was subset to include time points under 1500 minutes. For this analysis, the population size was transformed using the natural logarithm, meaning that parameters derived from this model may need to be exponentiated to reverse the transformation. A linear model was then fit to the relationship between time and ln(population size) during the exponential growth phase. The model output provides estimates for N₀ (the intercept) and r (the slope).
+
+The second linear model focuses on the plateau phase of the growth curve to estimate the carrying capacity (K). This phase does not require any log transformation. Here, the data was subset to include only time points beyond 2500 minutes, when the population has stabilized and reached its carrying capacity. Since the population size is stable at this point, no independent variable is applied to the model—only the intercept is estimated, which corresponds to the mean population size at carrying capacity. The model output thus provides an estimate of K, the population's carrying capacity.
+
 
 
 ## Model and plot 
