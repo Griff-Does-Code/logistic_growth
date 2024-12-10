@@ -1,7 +1,10 @@
 #Script to estimate the model parameters using a linear approximation
-install.packages("dplyr")
+
+#install and load dplyr if needed
+#install.packages("dplyr")
 library(dplyr)
 
+#read in data
 growth_data <- read.csv("experiment.csv")
 
 #Case 1. K >> N0, t is small
@@ -13,7 +16,7 @@ summary(model1)
 
 #Case 2. N(t) = K
 
-data_subset2 <- growth_data %>% filter(t>2000)
+data_subset2 <- growth_data %>% filter(t>2500)
 
 model2 <- lm(N ~ 1, data_subset2)
 summary(model2)

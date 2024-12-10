@@ -11,16 +11,12 @@ logistic_fun <- function(t) {
 }
 
 
-exponential_fun <- function(t) {
-  N <- N0*exp(r*t)
-  return(N)
-}
 
 N0 <- exp(6.8941709) #
   
 r <-  0.0100086 #
   
-K <- 59790000000  #
+K <- 60000000000  #
 
 
 

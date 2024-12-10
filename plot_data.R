@@ -1,10 +1,14 @@
-#Script to plot the logistic growth data
+#Script to create scatter plots of the growth data
 
+#read in raw growth data 
 growth_data <- read.csv("experiment.csv")
 
-install.packages("ggplot2")
+#if required install & load ggplot2
+#install.packages("ggplot2")
 library(ggplot2)
 
+
+#a scatter plot with x axis time (t) and y axis population sixe (N)
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
@@ -15,6 +19,8 @@ ggplot(aes(t,N), data = growth_data) +
   
   theme_bw()
 
+
+#a scatter plot with x axis log(time (t)) and y axis population sixe (N)
 ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
