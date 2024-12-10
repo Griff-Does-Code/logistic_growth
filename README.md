@@ -91,6 +91,6 @@ So exponential model output is a much larger population size than logistic growt
 
 See code for this in comparing_graphs.R script.
 
- ![Screenshot 2024-12-10 at 13 49 52](https://github.com/user-attachments/assets/deaee814-6911-4fe6-a4ea-dedfc4656dea)
 
+(https://5349d33996db4ad68e01db837e96c896.app.posit.cloud/graphics/plot.png?width=704&height=492&randomizer=1290069333)![image](https://github.com/user-attachments/assets/ca13bf23-84fe-432c-a229-5d0a21145a69)
 
